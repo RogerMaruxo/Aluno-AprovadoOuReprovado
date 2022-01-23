@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ba"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4B2D4B"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+    <EditText
+        android:id="@+id/nota1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="101dp"
+        android:background="#FCF0FF"
+        android:ems="10"
+        android:hint="@string/nota_1"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/nota2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nota2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="101dp"
+        android:autofillHints="true"
+        android:background="#FCF0FF"
+        android:ems="10"
+        android:hint="@string/nota_2"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/faltas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nota1" />
+
+    <EditText
+        android:id="@+id/faltas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="101dp"
+        android:background="#FCF0FF"
+        android:ems="10"
+        android:hint="@string/faltas"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/CALCULAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nota2"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/CALCULAR"
+        android:layout_width="323dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        android:scrollbarSize="5dp"
+        android:text="@string/CALCULAR"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:backgroundTint="#232323"
+        app:layout_constraintBottom_toTopOf="@+id/resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faltas"
+        app:rippleColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="253dp"
+        android:layout_height="183dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="60dp"
+        android:background="#FCF0FF"
+        android:gravity="center"
+        android:hapticFeedbackEnabled="true"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CALCULAR" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
